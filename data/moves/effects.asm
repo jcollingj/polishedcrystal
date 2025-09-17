@@ -881,7 +881,8 @@ DefenseCurl:
 	checkobedience
 	usedmovetext
 	doturn
-	forceraisestat DEFENSE
+	forceraisestat $10 | DEFENSE  ; +2 Defense
+	forceraisestat SPEED           ; +1 Speed
 	curl
 	endmove
 

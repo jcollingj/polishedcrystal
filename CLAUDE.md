@@ -25,7 +25,10 @@ This is Pokémon Polished Crystal - a ROM hack based on the Pokémon Crystal dis
 
 ## Build Commands
 
-### Main build commands:
+### Automated build script:
+- `./build-and-deploy.sh` - **Recommended**: Clean build, create ROM, and deploy to OpenEmu automatically
+
+### Manual build commands:
 - `make` - Build standard polishedcrystal.gbc ROM
 - `make clean` - Clean build artifacts
 - `make tidy` - Remove intermediate files

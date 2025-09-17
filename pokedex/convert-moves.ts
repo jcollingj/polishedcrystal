@@ -164,9 +164,10 @@ function parseMoveStats(content: string): Array<{
     const trimmed = line.trim();
 
     // Look for move definition lines
-    const moveMatch = trimmed.match(/^move\s+([A-Z_]+),\s*([A-Z_]+),\s*(\d+),\s*([A-Z_]+),\s*(-?\d+),\s*(\d+),\s*(\d+),\s*([A-Z_]+)$/);
+    // Format: move NAME, EFFECT, POWER, TYPE, ACCURACY, PP, EFFECT_CHANCE, CATEGORY
+    const moveMatch = trimmed.match(/^move\s+([A-Z_]+),\s*([A-Z_]+),\s*(\d+),\s*([A-Z_]+),\s*(-?\d+),\s*(\d+),\s*(\d+),\s*([A-Z_]+)/);
     if (moveMatch) {
-      const [, , effect, power, type, accuracy, pp, effectChance, category] = moveMatch;
+      const [, moveName, effect, power, type, accuracy, pp, effectChance, category] = moveMatch;
 
       moves.push({
         power: parseInt(power),

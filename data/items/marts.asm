@@ -189,7 +189,7 @@ UndergroundMart:
 	db -1
 
 EcruteakMart:
-	db 28 ; # items
+	db 18 ; # items
 	db POKE_BALL
 	db GREAT_BALL
 	db NEST_BALL
@@ -203,22 +203,12 @@ EcruteakMart:
 	db REVIVE
 	db RARE_CANDY
 	db ABILITYPATCH
-	db X_ATTACK
-	db X_DEFEND
-	db X_SPEED
-	db X_SP_ATK
-	db X_SP_DEF
-	db X_ACCURACY
-	db DIRE_HIT
-	db GUARD_SPEC
-	db FOCUS_BAND
-	db FOCUS_SASH
-	db LEFTOVERS
-	db EXPERT_BELT
-	db LIFE_ORB
-	db CHOICE_BAND
-	db CHOICE_SCARF
-	db CHOICE_SPECS
+	; First batch of TMs
+	dbw TM_EARTHQUAKE, 10000
+	dbw TM_THUNDERBOLT, 10000
+	dbw TM_ICE_BEAM, 10000
+	dbw TM_FLAMETHROWER, 10000
+	dbw TM_PSYCHIC, 10000
 	db -1
 
 OlivineMart:
