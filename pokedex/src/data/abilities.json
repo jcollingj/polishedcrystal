@@ -1,0 +1,622 @@
+[
+  {
+    "name": "---",
+    "description": "Abilities are disabled."
+  },
+  {
+    "name": "Stench",
+    "description": "May cause the foe to flinch."
+  },
+  {
+    "name": "Drizzle",
+    "description": "Summons rain when switched in."
+  },
+  {
+    "name": "Speed Boost",
+    "description": "Its Speed stat is gradually boosted."
+  },
+  {
+    "name": "Battle Armor",
+    "description": "Protects from critical hits."
+  },
+  {
+    "name": "Sturdy",
+    "description": "Cannot be knocked out with one hit."
+  },
+  {
+    "name": "Damp",
+    "description": "Prevents self- destructing moves."
+  },
+  {
+    "name": "Limber",
+    "description": "Protects from paralysis."
+  },
+  {
+    "name": "Sand Veil",
+    "description": "Boosts evasion in a sandstorm."
+  },
+  {
+    "name": "Static",
+    "description": "Contact may cause paralysis."
+  },
+  {
+    "name": "Volt Absorb",
+    "description": "Restores HP if hit by Electric moves."
+  },
+  {
+    "name": "Water Absorb",
+    "description": "Restores HP if hit by Water moves."
+  },
+  {
+    "name": "Oblivious",
+    "description": "Prevents it from being infatuated."
+  },
+  {
+    "name": "Cloud Nine",
+    "description": "Eliminates effects of weather."
+  },
+  {
+    "name": "Compound Eyes",
+    "description": "Boosts the Poké- mon's accuracy."
+  },
+  {
+    "name": "Insomnia",
+    "description": "Prevents it from falling asleep."
+  },
+  {
+    "name": "Immunity",
+    "description": "Prevents it from getting poisoned."
+  },
+  {
+    "name": "Flash Fire",
+    "description": "Boosts Fire moves if hit by one."
+  },
+  {
+    "name": "Shield Dust",
+    "description": "Blocks additional attack effects."
+  },
+  {
+    "name": "Own Tempo",
+    "description": "Prevents it from becoming confused."
+  },
+  {
+    "name": "Suction Cups",
+    "description": "Negates forced switch-outs."
+  },
+  {
+    "name": "Intimidate",
+    "description": "Lowers the foe's Attack stat."
+  },
+  {
+    "name": "Shadow Tag",
+    "description": "Prevents the foe from escaping."
+  },
+  {
+    "name": "Levitate",
+    "description": "Gives immunity to Ground-type moves."
+  },
+  {
+    "name": "Effect Spore",
+    "description": "Contact may cause Par, Psn, or Slp."
+  },
+  {
+    "name": "Synchronize",
+    "description": "Passes Psn, Par, or Brn to foes."
+  },
+  {
+    "name": "Clear Body",
+    "description": "Prevents foes from lowering stats."
+  },
+  {
+    "name": "Natural Cure",
+    "description": "Switch-outs heal status problems."
+  },
+  {
+    "name": "Lightning Rod",
+    "description": "Electric moves boost Sp.Atk."
+  },
+  {
+    "name": "Serene Grace",
+    "description": "Boosts the rate of added effects."
+  },
+  {
+    "name": "Swift Swim",
+    "description": "Boosts its Speed in rain."
+  },
+  {
+    "name": "Chlorophyll",
+    "description": "Boosts its Speed in sunshine."
+  },
+  {
+    "name": "Illuminate",
+    "description": "Raises the rate of wild #mon."
+  },
+  {
+    "name": "Trace",
+    "description": "Copies the foe's Ability."
+  },
+  {
+    "name": "Huge Power",
+    "description": "Boosts its Attack stat."
+  },
+  {
+    "name": "Poison Point",
+    "description": "Contact may poison the foe."
+  },
+  {
+    "name": "Inner Focus",
+    "description": "Protects it from flinching."
+  },
+  {
+    "name": "Magma Armor",
+    "description": "Prevents it from becoming frozen."
+  },
+  {
+    "name": "Water Veil",
+    "description": "Prevents it from getting a burn."
+  },
+  {
+    "name": "Magnet Pull",
+    "description": "Prevents escape by Steel-type foes."
+  },
+  {
+    "name": "Soundproof",
+    "description": "Gives immunity to sound-based moves."
+  },
+  {
+    "name": "Rain Dish",
+    "description": "Gradually regains HP in rain."
+  },
+  {
+    "name": "Sand Stream",
+    "description": "Summons sandstorm when switched in."
+  },
+  {
+    "name": "Pressure",
+    "description": "Raises the foe's PP usage."
+  },
+  {
+    "name": "Thick Fat",
+    "description": "Ups resistance to Fire and Ice."
+  },
+  {
+    "name": "Early Bird",
+    "description": "Awakens quickly from sleep."
+  },
+  {
+    "name": "Flame Body",
+    "description": "Contact may burn the foe."
+  },
+  {
+    "name": "Run Away",
+    "description": "Sure getaway from wild #mon."
+  },
+  {
+    "name": "Keen Eye",
+    "description": "Prevents foes from lowering accuracy."
+  },
+  {
+    "name": "Hyper Cutter",
+    "description": "Prevents foes from lowering Attack."
+  },
+  {
+    "name": "Pickup",
+    "description": "The #mon may pick up items."
+  },
+  {
+    "name": "Hustle",
+    "description": "Boosts Attack, but lowers accuracy."
+  },
+  {
+    "name": "Cute Charm",
+    "description": "Contact may cause infatuation."
+  },
+  {
+    "name": "Sticky Hold",
+    "description": "Protects it from item theft."
+  },
+  {
+    "name": "Shed Skin",
+    "description": "May heal its own status problems."
+  },
+  {
+    "name": "Guts",
+    "description": "Boosts Attack on status problems."
+  },
+  {
+    "name": "Marvel Scale",
+    "description": "Boosts Defense on status problems."
+  },
+  {
+    "name": "Liquid Ooze",
+    "description": "Damages foes using draining moves."
+  },
+  {
+    "name": "Overgrow",
+    "description": "Boosts Grass moves in a pinch."
+  },
+  {
+    "name": "Blaze",
+    "description": "Boosts Fire moves in a pinch."
+  },
+  {
+    "name": "Torrent",
+    "description": "Boosts Water moves in a pinch."
+  },
+  {
+    "name": "Swarm",
+    "description": "Boosts Bug moves in a pinch."
+  },
+  {
+    "name": "Rock Head",
+    "description": "Protects it from recoil damage."
+  },
+  {
+    "name": "Drought",
+    "description": "Summons sunlight when switched in."
+  },
+  {
+    "name": "Arena Trap",
+    "description": "Prevents the foe from fleeing."
+  },
+  {
+    "name": "Vital Spirit",
+    "description": "Boosts evasion if it is confused."
+  },
+  {
+    "name": "White Smoke",
+    "description": "Electric moves boost Speed."
+  },
+  {
+    "name": "Shell Armor",
+    "description": "Boosts damage to same-gender foes."
+  },
+  {
+    "name": "Tangled Feet",
+    "description": "Boosts Speed when it flinches."
+  },
+  {
+    "name": "Motor Drive",
+    "description": "Boosts evasion in hailstorms."
+  },
+  {
+    "name": "Rivalry",
+    "description": "Encourages early Berry use."
+  },
+  {
+    "name": "Steadfast",
+    "description": "Maxes Attack after a critical hit."
+  },
+  {
+    "name": "Snow Cloak",
+    "description": "Boosts Speed when held item is lost."
+  },
+  {
+    "name": "Gluttony",
+    "description": "Reduces HP in sun. Water restores HP."
+  },
+  {
+    "name": "Anger Point",
+    "description": "Adjusts stats based on foe's defenses."
+  },
+  {
+    "name": "Unburden",
+    "description": "Boosts power of punching moves."
+  },
+  {
+    "name": "Dry Skin",
+    "description": "Restores HP if it is poisoned."
+  },
+  {
+    "name": "Download",
+    "description": "Powers up same- type moves."
+  },
+  {
+    "name": "Iron Fist",
+    "description": "Increases multi- strike move hits."
+  },
+  {
+    "name": "Poison Heal",
+    "description": "Heals status problems in rain."
+  },
+  {
+    "name": "Adaptability",
+    "description": "Boosts Sp.Atk but lowers HP in sun."
+  },
+  {
+    "name": "Skill Link",
+    "description": "Boosts Speed with status problems."
+  },
+  {
+    "name": "Hydration",
+    "description": "Powers up critical hits."
+  },
+  {
+    "name": "Solar Power",
+    "description": "Only takes damage from attacks."
+  },
+  {
+    "name": "Quick Feet",
+    "description": "Ensures attacks by or against it hit."
+  },
+  {
+    "name": "Sniper",
+    "description": "Powers up its weaker moves."
+  },
+  {
+    "name": "Magic Guard",
+    "description": "Prevents status problems in sun."
+  },
+  {
+    "name": "No Guard",
+    "description": "Moves disregard the foe's ability."
+  },
+  {
+    "name": "Technician",
+    "description": "Boosts the rate of critical hits."
+  },
+  {
+    "name": "Leaf Guard",
+    "description": "Damages the foe on fainting."
+  },
+  {
+    "name": "Mold Breaker",
+    "description": "Senses the foe's dangerous moves."
+  },
+  {
+    "name": "Super Luck",
+    "description": "Determines the foe's moves."
+  },
+  {
+    "name": "Aftermath",
+    "description": "Ignores the foe's stat changes."
+  },
+  {
+    "name": "Anticipation",
+    "description": "Powers up not very effective moves."
+  },
+  {
+    "name": "Forewarn",
+    "description": "Reduces super effective damage."
+  },
+  {
+    "name": "Unaware",
+    "description": "Enables moves to hit Ghost-types."
+  },
+  {
+    "name": "Tinted Lens",
+    "description": "Gradually regains HP in hail."
+  },
+  {
+    "name": "Filter",
+    "description": "Summons hailstorm when switched in."
+  },
+  {
+    "name": "Scrappy",
+    "description": "The #mon may gather Honey. find Sweet Honey."
+  },
+  {
+    "name": "Ice Body",
+    "description": "Checks the foe's held item."
+  },
+  {
+    "name": "Solid Rock",
+    "description": "Powers up moves that recoil."
+  },
+  {
+    "name": "Snow Warning",
+    "description": "Steals foe's item when contacted."
+  },
+  {
+    "name": "Honey Gather",
+    "description": "Removes effects to increase damage."
+  },
+  {
+    "name": "Frisk",
+    "description": "Inverts the effect of stat changes."
+  },
+  {
+    "name": "Reckless",
+    "description": "Prevents foes from eating Berries."
+  },
+  {
+    "name": "Pickpocket",
+    "description": "Boosts Attack when stats are lowered."
+  },
+  {
+    "name": "Sheer Force",
+    "description": "May disable a move used on it."
+  },
+  {
+    "name": "Contrary",
+    "description": "Physical attacks trade Def for Spe."
+  },
+  {
+    "name": "Unnerve",
+    "description": "Halves the Poké- mon's weight."
+  },
+  {
+    "name": "Defiant",
+    "description": "Reduces damage when HP is full."
+  },
+  {
+    "name": "Cursed Body",
+    "description": "May recreate a Berry after use."
+  },
+  {
+    "name": "Weak Armor",
+    "description": "Raises a stat and lowers another."
+  },
+  {
+    "name": "Light Metal",
+    "description": "Protects it from weather damage."
+  },
+  {
+    "name": "Multiscale",
+    "description": "May poison the foe on contact."
+  },
+  {
+    "name": "Harvest",
+    "description": "Restores HP when withdrawn."
+  },
+  {
+    "name": "Moody",
+    "description": "Prevents foes from lowering Defense."
+  },
+  {
+    "name": "Overcoat",
+    "description": "Boosts Speed in a sandstorm."
+  },
+  {
+    "name": "Poison Touch",
+    "description": "Makes status moves miss more often."
+  },
+  {
+    "name": "Regenerator",
+    "description": "Boosts move power when moving last."
+  },
+  {
+    "name": "Big Pecks",
+    "description": "Transforms itself into the foe."
+  },
+  {
+    "name": "Sand Rush",
+    "description": "Attacks bypass the foe's barriers."
+  },
+  {
+    "name": "Wonder Skin",
+    "description": "Boosts Attack when knocking out foes."
+  },
+  {
+    "name": "Analytic",
+    "description": "Boosts Attack when hit by Dark moves."
+  },
+  {
+    "name": "Imposter",
+    "description": "Dark, Ghost or Bug moves boost Speed."
+  },
+  {
+    "name": "Infiltrator",
+    "description": "Reflects status- changing moves."
+  },
+  {
+    "name": "Moxie",
+    "description": "Boosts Attack when hit by Grass."
+  },
+  {
+    "name": "Justified",
+    "description": "Gives priority to a status move."
+  },
+  {
+    "name": "Rattled",
+    "description": "Boosts some moves in a sandstorm."
+  },
+  {
+    "name": "Magic Bounce",
+    "description": "Halves damage from physical moves."
+  },
+  {
+    "name": "Sap Sipper",
+    "description": "Protects from ball and bomb moves."
+  },
+  {
+    "name": "Prankster",
+    "description": "Boosts Sp.Atk on stat reduction."
+  },
+  {
+    "name": "Sand Force",
+    "description": "Powers up aura and pulse moves."
+  },
+  {
+    "name": "Fur Coat",
+    "description": "Boosts moves that makes contact."
+  },
+  {
+    "name": "Bulletproof",
+    "description": "Normal-type moves become Fairy-type."
+  },
+  {
+    "name": "Competitive",
+    "description": "Parent and child attack together."
+  },
+  {
+    "name": "Mega Launcher",
+    "description": "Boosts Sp.Atk when damaged over half."
+  },
+  {
+    "name": "Tough Claws",
+    "description": "Boosts Speed in a hailstorm."
+  },
+  {
+    "name": "Pixilate",
+    "description": "Normal-type moves become Electric."
+  },
+  {
+    "name": "Parental Bond",
+    "description": "Foes of any type can be poisoned."
+  },
+  {
+    "name": "Berserk",
+    "description": "Contact may lower the foe's Speed."
+  },
+  {
+    "name": "Slush Rush",
+    "description": "Boosts Attack, but allows one move."
+  },
+  {
+    "name": "Galvanize",
+    "description": "Suppresses all other Abilities."
+  },
+  {
+    "name": "Corrosion",
+    "description": "Moves first occasionally."
+  },
+  {
+    "name": "Tangling Hair",
+    "description": "Boosts Steel-type moves."
+  },
+  {
+    "name": "Screen Cleaner",
+    "description": "Contact causes Pe- rish Song status."
+  },
+  {
+    "name": "Steely Spirit",
+    "description": "Removes screens when switched in."
+  },
+  {
+    "name": "Perish Body",
+    "description": "Eats a Berry again after first use."
+  },
+  {
+    "name": "Gorilla Tactics",
+    "description": "Boosts power of slicing moves."
+  },
+  {
+    "name": "Neutralizing Gas",
+    "description": "Stops foes using priority moves."
+  },
+  {
+    "name": "Pastel Veil",
+    "description": "Bypass evasion and Ghost immunity."
+  },
+  {
+    "name": "Quick Draw",
+    "description": "No description available."
+  },
+  {
+    "name": "Cud Chew",
+    "description": "No description available."
+  },
+  {
+    "name": "Sharpness",
+    "description": "No description available."
+  },
+  {
+    "name": "Armor Tail",
+    "description": "No description available."
+  },
+  {
+    "name": "Mind's Eye",
+    "description": "No description available."
+  }
+]

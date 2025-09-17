@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import type { PokemonStats } from '../data/pokemon-types';
 import PokemonModal from './PokemonModal';
 
@@ -33,6 +33,7 @@ const PokemonViewer: React.FC = () => {
   const [selectedPokemon, setSelectedPokemon] = useState<PokemonStats | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [sortBy, setSortBy] = useState<SortOption>('name');
   const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
@@ -85,6 +86,13 @@ const PokemonViewer: React.FC = () => {
 
   useEffect(() => {
     fetchPokemon();
+  }, []);
+
+  // Auto-focus search input on page load
+  useEffect(() => {
+    if (searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
   }, []);
 
   const fetchPokemon = async () => {
@@ -236,6 +244,7 @@ const PokemonViewer: React.FC = () => {
       <div className="controls-container">
         <div className="search-and-sort">
           <input
+            ref={searchInputRef}
             type="text"
             placeholder="Search by name, type, or ability..."
             value={filters.search}

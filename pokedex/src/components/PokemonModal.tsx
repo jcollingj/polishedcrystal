@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Badge } from './ui/badge';
+import TypeEffectiveness from './TypeEffectiveness';
+import MoveDetailsModal from './MoveDetailsModal';
+import AbilityTooltip from './AbilityTooltip';
 import type { PokemonStats } from '../data/pokemon-types';
+import type { MoveData } from '../data/move-types';
 
 interface PokemonModalProps {
   pokemon: PokemonStats | null;
@@ -10,6 +14,37 @@ interface PokemonModalProps {
 }
 
 const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose }) => {
+  const [allMoves, setAllMoves] = useState<MoveData[]>([]);
+  const [selectedMove, setSelectedMove] = useState<MoveData | null>(null);
+  const [moveModalOpen, setMoveModalOpen] = useState(false);
+
+  useEffect(() => {
+    const fetchMoves = async () => {
+      try {
+        const response = await fetch('/api/moves');
+        const data = await response.json();
+        setAllMoves(data);
+      } catch (error) {
+        console.error('Failed to fetch moves:', error);
+      }
+    };
+
+    if (isOpen) {
+      fetchMoves();
+    }
+  }, [isOpen]);
+
+  const handleMoveClick = (moveName: string) => {
+    // Clean up move name for matching (remove underscores, normalize case)
+    const cleanMoveName = moveName.replace(/_/g, ' ').toLowerCase();
+    const move = allMoves.find(m => m.name.toLowerCase() === cleanMoveName);
+
+    if (move) {
+      setSelectedMove(move);
+      setMoveModalOpen(true);
+    }
+  };
+
   if (!pokemon) return null;
 
   return (
@@ -19,7 +54,7 @@ const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose })
           <DialogTitle className="text-3xl font-bold text-center">{pokemon.name}</DialogTitle>
         </DialogHeader>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Left Column - Basic Info */}
           <div className="space-y-6">
             {/* Types */}
@@ -80,9 +115,11 @@ const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose })
               <h3 className="text-xl font-semibold mb-3">Abilities</h3>
               <div className="flex flex-wrap gap-2">
                 {pokemon.abilities.map((ability, index) => (
-                  <Badge key={index} variant="secondary">
-                    {ability}
-                  </Badge>
+                  <AbilityTooltip key={index} abilityName={ability}>
+                    <Badge variant="secondary" className="cursor-help hover:bg-blue-100 transition-colors">
+                      {ability}
+                    </Badge>
+                  </AbilityTooltip>
                 ))}
               </div>
             </div>
@@ -123,7 +160,7 @@ const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose })
             </div>
           </div>
 
-          {/* Right Column - Learnset */}
+          {/* Middle Column - Learnset */}
           <div>
             <h3 className="text-xl font-semibold mb-3">Learnset</h3>
             {pokemon.learnset && pokemon.learnset.length > 0 ? (
@@ -132,8 +169,12 @@ const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose })
                   {pokemon.learnset
                     .sort((a, b) => a.level - b.level)
                     .map((move, index) => (
-                      <div key={index} className="flex justify-between items-center py-2 px-3 hover:bg-gray-50 rounded">
-                        <span className="font-medium">{move.move}</span>
+                      <div
+                        key={index}
+                        className="flex justify-between items-center py-2 px-3 hover:bg-blue-50 rounded cursor-pointer transition-colors"
+                        onClick={() => handleMoveClick(move.move)}
+                      >
+                        <span className="font-medium text-blue-600 hover:text-blue-800">{move.move}</span>
                         <Badge variant="outline" className="ml-2">
                           Lv. {move.level}
                         </Badge>
@@ -145,7 +186,19 @@ const PokemonModal: React.FC<PokemonModalProps> = ({ pokemon, isOpen, onClose })
               <p className="text-gray-500 italic">No learnset data available</p>
             )}
           </div>
+
+          {/* Right Column - Type Effectiveness */}
+          <div>
+            <h3 className="text-xl font-semibold mb-3">Type Effectiveness</h3>
+            <TypeEffectiveness pokemonTypes={pokemon.types} />
+          </div>
         </div>
+
+        <MoveDetailsModal
+          move={selectedMove}
+          isOpen={moveModalOpen}
+          onClose={() => setMoveModalOpen(false)}
+        />
       </DialogContent>
     </Dialog>
   );
