@@ -189,7 +189,7 @@ UndergroundMart:
 	db -1
 
 EcruteakMart:
-	db 11 ; # items
+	db 28 ; # items
 	db POKE_BALL
 	db GREAT_BALL
 	db NEST_BALL
@@ -201,6 +201,24 @@ EcruteakMart:
 	db BURN_HEAL
 	db ICE_HEAL
 	db REVIVE
+	db RARE_CANDY
+	db ABILITYPATCH
+	db X_ATTACK
+	db X_DEFEND
+	db X_SPEED
+	db X_SP_ATK
+	db X_SP_DEF
+	db X_ACCURACY
+	db DIRE_HIT
+	db GUARD_SPEC
+	db FOCUS_BAND
+	db FOCUS_SASH
+	db LEFTOVERS
+	db EXPERT_BELT
+	db LIFE_ORB
+	db CHOICE_BAND
+	db CHOICE_SCARF
+	db CHOICE_SPECS
 	db -1
 
 OlivineMart:
